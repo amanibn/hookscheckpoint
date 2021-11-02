@@ -36,3 +36,49 @@
     transform: rotate(360deg);
   }
 }
+/************************************************/
+
+  .fa.active{
+    color: #ffa500;
+  }
+  .fa.inactive{
+   color: #dddddd;
+  }
+  button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .on {
+    color: #ffa500;
+  }
+  .off {
+    color:#dddddd;
+  }
+  .has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+    
+}
+.star{
+  font-size: 3rem;
+}
+.addButton{
+  right: 0;
+  top:0;
+  position:absolute;
+  padding: 10px;
+}
+.posterURL{
+    width:216px;
+    height:190px !important;
+}
+
