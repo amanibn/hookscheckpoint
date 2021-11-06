@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import parse from 'html-react-parser';
+import { Link, Router } from "react-router-dom";
 
 export default function MovieCard({ movie }) {
   const project = (rating) => {
@@ -17,7 +18,7 @@ export default function MovieCard({ movie }) {
   return (
     
         <div className='col-3'>
-        <img className='img-fluid posterURL' src ={movie.posterURL} />
+        <Link to={`/description/${movie.id}`} ><img className='img-fluid posterURL' src ={movie.posterURL} /></Link>
         <h1>{movie.title}</h1>
         <p>{movie.description}</p>
         <div className="star-ratings">
